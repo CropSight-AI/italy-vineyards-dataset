@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.1.2 — 2026-05-18
+
+### Added
+
+- `data/derived_vineyard_zones/toscana/` — 3 sub-polygons at 1 km buffer
+  covering Chianti core (Florence-Siena belt), Brunello/Vino Nobile
+  (Montalcino/Montepulciano), and Chianti Rufina (NE of Florence).
+  Together cover **62.2% of CropSight CORINE 221 Toscana vineyard area**
+  in 3 contiguous polygons.
+- `examples/example_toscana_subpolygons.png` — visualization of the
+  3 Toscana sub-polygons on a map.
+
+### Validation context
+
+These derived zones produced **8.61% mean test MAPE** when used with
+CropSight's default model pipeline on Toscana wine grape yields
+(2007-2025, 3-fold time-series CV, 100 epochs). See CropSight internal
+`TOSCANA_VALIDATION.md` for details.
+
 ## v0.1.1 — 2026-05-18
 
 ### Changed

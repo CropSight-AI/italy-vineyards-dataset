@@ -75,7 +75,8 @@ data/
 └── derived_vineyard_zones/        OPTIONAL: ready-to-use contiguous polygons
     ├── sardegna/                  3 buffer-size variants (5/10/20 km)
     ├── sicilia/                   3 sub-polygons (Western/Central/SE)
-    └── puglia/                    3 sub-polygons (North-Central/Salento/Itria)
+    ├── puglia/                    5 sub-polygons (Daunia/Murge/Itria/Salento/Brindisi)
+    └── toscana/                   3 sub-polygons (Chianti core/Brunello/Rufina)
 ```
 
 Plus:
