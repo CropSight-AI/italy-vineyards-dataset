@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Intermediate / cached files (don't ship)
+*_tmp.geojson
+*_cache/
+.DS_Store
+Thumbs.db
