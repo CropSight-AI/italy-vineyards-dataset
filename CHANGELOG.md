@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.1.1 — 2026-05-18
+
+### Changed
+
+- `data/derived_vineyard_zones/puglia/` now contains the **top-5**
+  components (was top-3). Coverage rises from 77.2% to **90.2%** with
+  density essentially unchanged (32.1% → 31.2%). Adds the previously
+  missing Daunia/Foggia cluster (#5) and a separate eastern cluster
+  around Brindisi (#4). See `docs/METHODOLOGY.md` for rationale.
+- `examples/example_puglia_subpolygons.png` updated to show the top-5
+  layout.
+
 ## v0.1.0 — 2026-05-18
 
 Initial release.

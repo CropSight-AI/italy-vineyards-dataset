@@ -96,7 +96,15 @@ that yielded a defensible coverage/density combination:
 |---|---|---|---|---|
 | Sardegna | 10 km | 1 | n/a (one polygon by design) | ~25% |
 | Sicilia | 1 km | 3 | 88.6% | 39.6% |
-| Puglia | 1.5 km | 3 | 77.2% | 32.1% |
+| Puglia | 1.5 km | 5 | 90.2% | 31.2% |
+
+Note for Puglia: an initial top-3 build gave 77.2% / 32.1%. The top-N
+sweep showed that components 4 and 5 (each ~300–400 km², still dense
+vineyard clusters) add +13 pp of coverage with almost no density cost
+(31.2 vs 32.1) — so we ship the top-5 version. This is unlike the
+buffer-size lever, where higher coverage always costs density: adding
+*new clusters* at the same buffer keeps density stable because each
+new cluster IS dense vineyard. See `examples/example_puglia_subpolygons.png`.
 
 Why different parameters per region:
 - **Sardegna** has clustered vineyards in one main southern wine belt; one
